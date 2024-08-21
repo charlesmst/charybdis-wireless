@@ -156,9 +156,9 @@
         lower_layer {
             label = "Number";
             bindings = <
-&kp GRAVE &kp N1   &kp N2  &kp N3  &kp N4     &kp N5    &kp N7     &kp N8     &kp N9     &kp N0    
-&kp  ESC  &trans   &trans  &trans  &kp G      &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC  
-&trans    &trans   &trans  &kp T   &kp B      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp DEL  
+&kp N1     &kp N2     &kp N3    &kp N4    &kp N5      &kp N6    &kp N7     &kp N8     &kp N9     &kp N0    
+&kp LALT   &kp RCTRL  &kp TAB   &kp ESC   &kp LC(B)   &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp BSPC  
+&mkp MB4   &mo SCROL  &mkp MB2  &mkp MB1  &mkp MB3    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp DEL   
                                  &trans    &trans    &trans       &trans    &trans     
             >;
         };
