@@ -217,7 +217,7 @@
             bindings = <
 &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN  &trans              &msc MOVE_LEFT  &msc MOVE_UP    &msc MOVE_DOWN    &msc MOVE_RIGHT &trans          
 &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP    &trans              &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT &trans          
-&mkp MB4        &mkp MB5        &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB5        &mkp MB1        &mkp MB2        &mo SCROL        &mkp MB4        
+&mkp MB4        &mo SCROL       &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB5        &mkp MB1        &mkp MB2        &mo SCROL        &mkp MB4        
                                  &trans    &trans    &trans       &trans    &trans     
             >;
         };
