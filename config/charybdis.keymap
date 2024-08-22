@@ -205,7 +205,7 @@
         mouse_layer {
             label = "Mouse";
             bindings = <
-&trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN                &msc MOVE_LEFT  &msc MOVE_UP    &msc MOVE_DOWN  &msc MOVE_RIGHT &trans          
+&trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN                &kp LA(LS(A))  &kp LC(UP)    &kp LA(LS(A))  &trans &trans          
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP                  &trans          &mkp MB4        &mkp MB5        &trans          &trans          
 &mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)        &mo SNIPE        
                                  &trans    &trans    &trans       MO_TOG(MOUSE)    &trans     
