@@ -18,9 +18,9 @@
 #define SYMBO 4
 #define LOGAM 5
 #define SUPER 6
-#define TILIN 7
-#define TILWI 8
-#define MOUSE 9
+#define MOUSE 7
+#define TILIN 8
+#define TILWI 9
 #define SCROL 10
 #define SNIPE 11
 
@@ -202,6 +202,16 @@
             >;
         };
 
+        mouse_layer {
+            label = "Mouse";
+            bindings = <
+&trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN                &msc MOVE_LEFT  &msc MOVE_UP    &msc MOVE_DOWN  &msc MOVE_RIGHT &trans          
+&trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP                  &trans          &mkp MB4        &mkp MB5        &trans          &trans          
+&mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)        &mo SNIPE        
+                                 &trans    &trans    &trans       &trans    &trans     
+            >;
+        };
+
         tiling_layer {
             label = "Tiling";
             bindings = <
@@ -222,15 +232,6 @@
             >;
         };
 
-        mouse_layer {
-            label = "Mouse";
-            bindings = <
-&trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN  &trans              &msc MOVE_LEFT  &msc MOVE_UP    &msc MOVE_DOWN  &msc MOVE_RIGHT &trans          
-&mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP    &trans              &trans          &mkp MB4        &mkp MB5        &trans          &trans          
-&mo SNIPE       MO_TOG(SCROL)       &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)        &mo SNIPE        
-                                 &trans    &trans    &trans       &trans    &trans     
-            >;
-        };
 
         scroll {
             label = "Scroll";
