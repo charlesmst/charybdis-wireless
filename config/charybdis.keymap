@@ -128,6 +128,15 @@
             tap-ms = <0>;
             bindings = <&to WINDO>,  <&bt BT_SEL 4>;
         };
+
+        dmouse: dmouse {
+            label = "deactivate_mouse";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <0>;
+            tap-ms = <0>;
+            bindings = <&mo MOUSE>, <&mo SCROL>,  <&mo SNIPE>;
+        };
     };
 
     combos {
@@ -217,7 +226,7 @@
 &trans    &trans          &mmv MOVE_UP    &trans          &msc MOVE_DOWN                &kp LA(LS(A))  &kp LC(UP)    &kp LA(LS(D))  &trans &trans          
 &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc MOVE_UP                  &trans          &mkp MB4        &mkp MB5        &trans          &trans          
 &mo SNIPE MO_TOG(SCROL)   &mkp MB2        &mkp MB1        &mkp MB3            &mkp MB3        &mkp MB1        &mkp MB2        MO_TOG(SCROL)        &mo SNIPE        
-                                 &trans    &trans    &trans       MO_TOG(MOUSE)    &mkp MB1     
+                                 &trans    &trans    &trans       &dmouse    &mkp MB1     
             >;
         };
 
