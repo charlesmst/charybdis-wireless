@@ -4,13 +4,15 @@ manifest:
       url-base: https://github.com/charlesmst
     - name: inorichi
       url-base: https://github.com/inorichi
+    - name: charlesmst
+      url-base: https://github.com/charlesmst
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: main
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: inorichi
+      remote: charlesmst
       revision: main
   self:
     path: config
