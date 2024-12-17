@@ -10,6 +10,9 @@ endif
 
 if SHIELD_CHARYBDIS_LEFT || SHIELD_CHARYBDIS_RIGHT
 
+config ZMK_KEYBOARD_NAME
+	default "Charybdis Peripheral"
+
 config ZMK_SPLIT
 	default y
 	
