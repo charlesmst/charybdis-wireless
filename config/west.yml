@@ -20,9 +20,7 @@ manifest:
       remote: charlesmst
       revision: main
     - name: zmk-tri-state
-      path: modules/zmk/tri-state
       remote: urob
-      revision: v0.1
     - name: zephyr
       revision: v3.5.0+zmk-fixes
       clone-depth: 1
