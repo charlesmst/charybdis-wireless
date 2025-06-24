@@ -159,6 +159,14 @@
             tapping-term-ms = <200>;
             bindings = <MO_TOG(MOUSE)>, <&to GAMIN>;
         };
+
+        swap: swapper {
+            compatible = "zmk,behavior-tri-state";
+            label = "SWAPPER";
+            #binding-cells = <0>;
+            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
+            ignored-key-positions = <26>;
+        };
     };
 
     macros {
@@ -340,8 +348,8 @@
             label = "TWin";
             bindings = <
 &w1           &w2             &w3                         &w4                         &w5                           &w6          &w7         &w8         &w9        &trans  
-&trans        &kp RA(TAB)     &hs LC(LA(LS(E))) LA(LS(E)) &hs LC(LA(LS(R))) LA(LS(R)) &hs LC(LA(LS(T))) LA(LS(T))   &trans       &trans      &trans      &trans                         &trans  
-&kp LA(LS(D)) &kp RA(LS(TAB)) &kp LA(LS(D))               &trans                      &trans                        &trans       &trans      &trans                      &trans                      &trans  
+&trans        &swap     &hs LC(LA(LS(E))) LA(LS(E)) &hs LC(LA(LS(R))) LA(LS(R)) &hs LC(LA(LS(T))) LA(LS(T))   &trans       &trans      &trans      &trans                         &trans  
+&kp LA(LS(D)) &kp LS(TAB) &kp LA(LS(D))               &trans                      &trans                        &trans       &trans      &trans                      &trans                      &trans  
                                                                   &trans                      &trans                         &kp LGUI                    &trans                         &trans                         
             >;
         };
