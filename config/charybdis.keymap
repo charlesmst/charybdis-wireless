@@ -247,8 +247,14 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <26 27 28 29>;
+            key-positions = <26 27 28>;
             bindings = <&tog MOUSE>;
+        };
+
+        combo_gamin {
+            timeout-ms = <50>;
+            key-positions = <21 22 23>;
+            bindings = <&tog GAMIN>;
         };
     };
 
